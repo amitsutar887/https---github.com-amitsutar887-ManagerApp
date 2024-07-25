@@ -1,0 +1,24 @@
+<form [formGroup]="EmployeeForm">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="form-group">
+                <mat-form-field appearance="outline">
+                    <mat-label>Employee Name</mat-label>
+                    <input matInput type="text" placeholder="Enter Employee Name" formControlName="EmployeeName" class="form-control" required>        
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field appearance="outline">
+                    <mat-label>Employee Salary</mat-label>
+                    <input matInput type="text" placeholder="Enter Employee Salary" formControlName="EmployeeSalary" class="form-control" required>        
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+</form>
+<mat-dialog-actions>
+    <button class="btn btn-primary btn-round btn-sm mr-2" (click)="addEmployee()"><span
+      class="material-icons">
+      check
+    </span>&nbsp;Save</button> 
+</mat-dialog-actions>
